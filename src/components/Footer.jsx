@@ -10,14 +10,14 @@ const Footer = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        height: "30px",
-        fontSize :"12px",
+        height: "42px",
+        fontSize :"15px",
         fontFamily: '"Baloo Bhai 2","Poppins",sans-serif'
     }
     return (
         <>
             <section className="footer" style={footerStyle}>
-                From Aero to Infinity ∞ 
+                From Aero to Infinity <span style={{color : "#07b1fb", fontSize : "18px", fontWeight : 800}}>&nbsp; ∞</span> 
             </section>
 
         </>

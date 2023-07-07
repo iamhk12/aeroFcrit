@@ -1,4 +1,4 @@
-.spnsPage{
+.spnsPage {
     min-height: calc(100vh - 80px);
     background: linear-gradient(#051b47, #03122f);
     display: flex;
@@ -6,7 +6,46 @@
     color: white;
 }
 
-.spnsPage .spnsHero h1{
+.spnsPage .spnsHero  {
+    min-height: 80vh ;
+    display: flex;
+    align-items: center;
+}
+
+.spnsPage .spnsHero h1 {
     text-align: center;
-    margin: 40px 0px;
+    margin-bottom: 40px ;
+}
+
+.spnsPage .spnContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.spnsPage .spnContentBox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.spnsPage .spnContentBox img{
+    max-width: 30% ;
+    min-width: 200px;
+    height: auto;
+    /* filter: drop-shadow(#000000 0px 0px 2px); */
+}
+
+.spnsPage .spnContentBox .ansys{
+    max-width: 23% ;
+    min-width: 200px;
+}
+
+.spnsPage .spnContentBox .impSL{
+    padding-top: 30px;
+    max-width: 33% ;
+    min-width: 200px;
 }

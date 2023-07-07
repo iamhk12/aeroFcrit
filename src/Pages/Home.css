@@ -19,6 +19,25 @@
 
 }
 
+.homePage .socialLinks{
+    margin-top: 50px;
+    gap: 40px;
+    align-items: center;
+    /* background-color: red; */
+    backdrop-filter: blur(10px) brightness(170%);
+    border: #fff 2px solid;
+    box-shadow: #000 0px 0px 50px;
+    border-radius: 20px;
+    width: 40%;
+    min-width: 400px;
+    padding: 20px;
+    box-shadow: #000 0px 0px 40px;
+
+}
+
+.homePage .socialLinks h2{
+    font-size: 30px;
+}
 .homePage .homeLeftContent {
     height: 100%;
     min-height: calc(100vh - 80px);
@@ -155,6 +174,10 @@
     width: 50%;
     opacity: 0.98;
     height: 420px;
+    outline-offset: 5px;
+    outline: 1px solid white;
+    border-radius: 10px;
+    box-shadow: #000 0px 0px 40px;
 }
 
 .mapouter:hover {

@@ -4,6 +4,9 @@ import planeImage from "../components/plane_home.png";
 import "./Home.css";
 import Footer from "../components/Footer";
 import Preloader from "../components/Preloader";
+import linkedinLogo from "../components/linkedin.png";
+import instagramLogo from "../components/instagram.png";
+import youtubeLogo from "../components/youtube.png";
 
 const Home = () => {
     const [emojiIndex, setEmojiIndex] = useState(0);
@@ -51,7 +54,34 @@ const Home = () => {
 
                 <div className="mapSection ">
                     <h1>Meet & Greet Us @</h1>
-                    <div class="mapouter"><div class="gmap_canvas"><iframe title="aeroMap" class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=658&amp;height=320&amp;hl=en&amp;q=Fcrit&amp;t=p&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://thepasswordgame.com/">Password Game</a></div></div>
+                    <div className="mapouter">
+                        <div className="gmap_canvas">
+                            <iframe
+                                title="aeroMap"
+                                className="gmap_iframe"
+                                width="100%"
+                                frameborder="0"
+                                scrolling="no"
+                                marginheight="0"
+                                marginwidth="0"
+                                src="https://maps.google.com/maps?width=658&amp;height=320&amp;hl=en&amp;q=Fcrit&amp;t=p&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                            ></iframe>
+                            <a href="https://thepasswordgame.com/">Password Game</a>
+                        </div>
+                    </div>
+                    <div className="centeringdiv socialLinks">
+                        <h2>Connect with Us : </h2>
+
+                        <a href="https://youtube.com/@aerofcrit" target="_blank" rel="noopener noreferrer">
+                            <img style={{ height: "45px" }} src={youtubeLogo} alt="YouTube" />
+                        </a>
+                        <a href="https://www.linkedin.com/company/aero-fcrit/" target="_blank" rel="noopener noreferrer">
+                            <img style={{ height: "45px" }} src={linkedinLogo} alt="LinkedIn" />
+                        </a>
+                        <a href="https://instagram.com/aero_fcrit" target="_blank" rel="noopener noreferrer">
+                            <img style={{ height: "45px" }} src={instagramLogo} alt="Instagram" />
+                        </a>
+                    </div>
                 </div>
             </div>
             <Footer />

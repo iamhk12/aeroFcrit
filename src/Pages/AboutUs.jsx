@@ -2,13 +2,16 @@ import React from "react"
 import './AboutUs.css'
 import Nav from "../components/Nav"
 import teamImg from "../components/aero_team.jpg";
+import teamGaruda from "../components/teamGaruda.png";
 import Preloader from "../components/Preloader";
+import aeroLogo from "../components/logo.png"
+import Footer from "../components/Footer";
 
 const AboutUs = () => {
     return (
         <>
             <Nav />
-            <Preloader/>
+            <Preloader />
             <div className="aboutPage">
                 <div className="aboutSection">
                     <h1 className="animate__animated animate__fadeInUp animate__delay-2s">AERO FCRIT</h1>
@@ -50,7 +53,53 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
+                <div className="aboutSection">
+                    <h1 className="animate__animated animate__fadeInUp animate__delay-2s">TEAM GARUDA</h1>
+                    <div className="abContent reverseFlex animate__animated animate__fadeInUp animate__delay-2s">
+                        <div className="abRight">
+                            <img src={teamGaruda} className="garudaImg" alt="team_aero" />
+                        </div>
+                        <div className="abLeft">
+                            <p>
+                                Team Garuda participates in SAEISS
+                                Drone Development Challenge(DDC) which is
+                                a pan-India competition, conducted
+                                every year.
+                            </p>
+                            <p>
+                                It provides opportunities to showcase
+                                extraordinary talents to conceive,
+                                design and develop a prototype of a
+                                fixed-wing UAV.
+                            </p>
+                            <p>
+                                Both Mechanical and Electrical
+                                departments contributes to the team.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="aboutSection">
+                    <h1 className="animate__animated animate__fadeInUp animate__delay-2s">TEAM THESTRAL</h1>
+                    <div className="abContent reverseFlex2 animate__animated animate__fadeInUp animate__delay-2s">
+                        <div className="abRight">
+                            <img src={aeroLogo} className="garudaImg" alt="team_aero" />
+                        </div>
+                        <div className="abLeft">
+                            <p>
+                                Team Thestral is involved in the SAEISS Autonomous Drone Development Challenge (ADDC), an annual competition held in India.
+                            </p>
+                            <p>
+                                This event serves as a platform for participants to demonstrate their exceptional skills in conceptualizing, designing, and building a drone prototype.
+                            </p>
+                            <p>
+                                Mechanical, Electrical, Computer and IT departments contributes to the team
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <Footer/>
         </>
     )
 }

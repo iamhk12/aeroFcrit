@@ -17,7 +17,9 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: linear-gradient(to bottom, #051b47, #051b47);
+  /* background: linear-gradient(to bottom, #051b47, #051b47); */
+  background-color: #000;
+
 }
 
 /* Style the scrollbar thumb */
