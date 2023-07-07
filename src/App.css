@@ -8,6 +8,10 @@
   justify-content: center;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
   width: 0.2em;
 }

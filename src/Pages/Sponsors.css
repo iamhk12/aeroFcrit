@@ -1,0 +1,12 @@
+.spnsPage{
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(#051b47, #03122f);
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.spnsPage .spnsHero h1{
+    text-align: center;
+    margin: 40px 0px;
+}

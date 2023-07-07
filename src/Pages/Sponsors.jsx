@@ -7,6 +7,11 @@ const Sponsors = () => {
         <>
             <Nav />
             <Preloader />
+            <div className="spnsPage">
+                <div className="spnsHero">
+                    <h1>OUR SPONSORS</h1>
+                </div>
+            </div>
         </>
     )
 }

@@ -27,10 +27,10 @@ const Home = () => {
                 <div className="hero">
                     <div className="homeLeft">
                         <div className="homeLeftContent">
-                            <h1 className="animate__animated animate__fadeInUp animate__delay-2s gradientText">
+                            <h1 className="animate__animated animate__fadeInLeft animate__delay-2s gradientText">
                                 AERO FCRIT
                             </h1>
-                            <h3 className="animate__animated animate__fadeInUp animate__delay-2s subText">
+                            <h3 className="animate__animated animate__fadeInLeft animate__delay-2s subText">
                                 A Place Where Innovation Meets Aviation
                             </h3>
                             <div className="cursorEffect"></div>
@@ -42,7 +42,7 @@ const Home = () => {
                     </div>
                     <div className="homeRight">
                         <img
-                            className="animate__animated animate__fadeInUp animate__delay-2s planeImage"
+                            className="animate__animated animate__fadeInRight animate__delay-2s planeImage"
                             src={planeImage}
                             alt="Plane"
                         />
@@ -51,7 +51,7 @@ const Home = () => {
 
                 <div className="mapSection ">
                     <h1>Meet & Greet Us @</h1>
-                    <div class="mapouter animate__animated animate__fadeInUp animate__delay-2s"><div class="gmap_canvas"><iframe title="aeroMap" class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=658&amp;height=320&amp;hl=en&amp;q=Fcrit&amp;t=p&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://thepasswordgame.com/">Password Game</a></div></div>
+                    <div class="mapouter"><div class="gmap_canvas"><iframe title="aeroMap" class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=658&amp;height=320&amp;hl=en&amp;q=Fcrit&amp;t=p&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://thepasswordgame.com/">Password Game</a></div></div>
                 </div>
             </div>
             <Footer />

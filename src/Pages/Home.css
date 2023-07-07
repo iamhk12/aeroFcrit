@@ -132,17 +132,20 @@
     }
 }
 
-.mapSection{
+.mapSection {
     display: flex;
-    background: linear-gradient( #03122f,#03122f);
+    background: linear-gradient(#03122f, #03122f);
     justify-content: center;
-    padding: 60px 0px;
+    padding: 70px 0px;
     color: white;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    background: url("../components/college_image.jpg") center no-repeat;
+    background-size: cover;
 }
 
-.mapSection h1{
+.mapSection h1 {
     margin-bottom: 50px;
 }
 
@@ -153,7 +156,8 @@
     opacity: 0.98;
     height: 420px;
 }
-.mapouter:hover{
+
+.mapouter:hover {
     opacity: 1;
 
 }
