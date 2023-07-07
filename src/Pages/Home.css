@@ -5,7 +5,7 @@
     align-items: center;
     width: 100%;
     color: white;
-    background: linear-gradient(#051b47 , #03122f);
+    background: linear-gradient(#051b47, #03122f);
 }
 
 .homePage .homeLeft {
@@ -34,14 +34,18 @@
 .homePage .homeLeftContent h1 {
     font-size: 80px;
     font-weight: 800;
-    font-family: 'Montserrat','Poppins','Baloo Bhai 2', Arial;
+    font-family: 'Montserrat', 'Poppins', 'Baloo Bhai 2', Arial;
 }
+.homePage .homeLeftContent h2 {
+    font-size: 30px;
+}
+
 .homePage .homeLeftContent h3 {
     font-size: 50px;
     font-weight: 300;
-    filter: drop-shadow(#00000039 0px 5px 10px) ;
+    filter: drop-shadow(#00000039 0px 5px 10px);
     background-color: #00000000;
-    font-family: 'Montserrat','Poppins','Baloo Bhai 2', Arial;
+    font-family: 'Montserrat', 'Poppins', 'Baloo Bhai 2', Arial;
 
 }
 
@@ -55,15 +59,34 @@
     justify-content: center;
     align-content: center;
     position: relative;
-    
+
 }
 
+@keyframes boxShadePlaneImg {
+    0% {
+        filter: drop-shadow(#26bfe174 0px 0px 60px) ;
+        opacity: 0.8;
+    }
 
-.homePage .planeImage{
+    50% {
+        filter: drop-shadow(#00d0ff8e 0px 0px 60px) contrast(105%) brightness(120%);
+        opacity: 1;
+    }
+
+    100% {
+        filter: drop-shadow(#26bfe174 0px 0px 60px) ;
+        opacity: 0.8;
+
+    }
+}
+
+.homePage .planeImage {
     background-color: #00000000;
-    filter: drop-shadow(#26bfe174 0px 0px 60px) ;
+    filter: drop-shadow(#26bfe174 0px 0px 60px);
     max-width: 500px;
     height: auto;
+    animation:boxShadePlaneImg 1.4s linear infinite ;
+
 }
 
 
@@ -72,21 +95,112 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* -webkit-text-stroke:  #000; */
-    filter: drop-shadow(#00000083 0px 5px 10px) ;
+    filter: drop-shadow(#00000083 0px 5px 10px);
 
 }
 
-.homePage .aboutSection{
-    background: linear-gradient(#03122f , #04163a);
+.homePage .aboutSection {
+    background: linear-gradient(#03122f, #04163a);
     color: white;
-    padding: 30px ;
+    padding: 30px;
 
 }
-.homePage .aboutSection>h1{
+
+.homePage .aboutSection>h1 {
     text-align: center;
     margin-bottom: 35px;
 }
 
-.homePage .aboutSection p{
-    text-align: center;
+.homePage .abContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
+
+.homePage .abContent .abLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    width: 55%;
+    padding: 20px 0px;
+    /* background-color: #03122f; */
+}
+
+
+.homePage .abContent .abRight {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: -40px ;
+}
+
+@keyframes boxShadeTeamImg {
+    0% {
+        box-shadow: #ffffff12 0px 0px 50px;
+    }
+
+    50% {
+        box-shadow: #ffffff66 0px 0px 50px;
+    }
+
+    100% {
+        box-shadow: #ffffff12 0px 0px 50px;
+    }
+}
+
+.homePage .aboutSection>h1 {
+    text-shadow: #000000b4 0px 0px 50px;
+}
+.homePage .teamImg {
+    width: 90%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin-left: 50px;
+    outline: 3px solid white;
+    outline-offset: 5px;
+    border-radius: 3px;
+    animation: boxShadeTeamImg 2s linear infinite;
+}
+
+.abLeft p {
+    width: 100%;
+    padding: 0px 50px;
+    font-size: 14px;
+}
+
+
+
+.cursorEffect {
+    /* display: inline-block; */
+    /* position: relative; */
+    height: 30px;
+    width: 0.4em;
+    margin-right: 0.5em;
+  }
+  
+  .cursor {
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    width: 8px;
+    height: 40px;
+    background-color: #ffffff;
+    animation: cursorBlink 1s infinite;
+  }
+  
+  @keyframes cursorBlink {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
