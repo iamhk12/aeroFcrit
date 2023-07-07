@@ -2,8 +2,32 @@
   text-align: center;
 }
 
-.centeringdiv{
+.centeringdiv {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+body::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #051b47, #051b47);
+}
+
+/* Style the scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+}
+
+/* Hover state for the scrollbar thumb */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+
+}
+
+/* Style the scrollbar corner (optional) */
+body::-webkit-scrollbar-corner {
+  background-color: transparent;
 }

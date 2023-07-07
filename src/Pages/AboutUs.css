@@ -1,0 +1,78 @@
+.aboutPage{
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(#051b47, #04163a);
+    display: flex;
+}
+.aboutPage .aboutSection {
+    color: white;
+    padding: 30px;
+    margin-top: 70px;
+
+}
+
+.aboutPage .aboutSection>h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.aboutPage .abContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.aboutPage .abContent .abLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    width: 55%;
+    padding: 20px 0px;
+    /* background-color: #03122f; */
+}
+
+
+.aboutPage .abContent .abRight {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: -40px ;
+}
+
+@keyframes boxShadeTeamImg {
+    0% {
+        box-shadow: #ffffff12 0px 0px 50px;
+    }
+
+    50% {
+        box-shadow: #ffffff66 0px 0px 50px;
+    }
+
+    100% {
+        box-shadow: #ffffff12 0px 0px 50px;
+    }
+}
+
+.aboutPage .aboutSection>h1 {
+    text-shadow: #000000b4 0px 0px 50px;
+}
+.aboutPage .teamImg {
+    width: 90%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin-left: 50px;
+    outline: 3px solid white;
+    outline-offset: 5px;
+    border-radius: 3px;
+    animation: boxShadeTeamImg 2s linear infinite;
+}
+
+.abLeft p {
+    width: 100%;
+    padding: 0px 50px;
+    /* font-size: 14px; */
+}
+
+
