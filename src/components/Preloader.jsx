@@ -21,7 +21,7 @@ const Preloader = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowPopup(false);
-        }, 1500);
+        }, 1800);
 
         return () => clearTimeout(timer);
     }, []);
@@ -36,7 +36,7 @@ const Preloader = () => {
 
     setTimeout(() => {
         setNodisplay(true);
-    }, 1700);
+    }, 2000);
 
     return (
         <>

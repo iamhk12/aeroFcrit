@@ -20,7 +20,7 @@
 
 .aboutPage .aboutSection.garuda {
     background-color: #006191;
-    background: linear-gradient(#041d4f , #062668);
+    background: linear-gradient(#041d4f, #062668);
     /* border-top: 2px solid white; */
 
 }
@@ -33,10 +33,6 @@
 
 }
 
-.thrslh1{
-    
-}
-
 .aboutPage .aboutSection>h1 {
     text-align: center;
     margin-bottom: 35px;
@@ -46,8 +42,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
+
+.abLeft.animate__animated.animate__fadeInUp {
+    --animate-duration: 2s;
+    /* --animate-delay: 0s; */
+}
+
+
 
 .aboutPage .reverseFlex {
     display: flex;
@@ -57,6 +59,41 @@
     justify-content: center;
     padding: 60px 0px;
 
+}
+
+.aeroh1 {
+    background: linear-gradient(to right, #00aeff00, #7cebc800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    text-stroke: 1.5px rgb(0, 0, 0);
+    font-weight: 900;
+    /* text-shadow:  */
+    filter: drop-shadow(#ffffff59 0px 0px 5px);
+
+}
+
+.garudah1 {
+    background: linear-gradient(#00aeff00, #00aeff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px #fff;
+    text-stroke: 1.5px white;
+    font-weight: 800;
+    filter: drop-shadow(#ffffff59 0px 0px 5px);
+
+
+}
+
+.thrslh1 {
+    background: linear-gradient(#00aeff00, #00aeff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1.5px white;
+    /* font-weight: 700; */
+    font-weight: 800;
+    filter: drop-shadow(#ffffff59 0px 0px 5px);
 }
 
 .aboutPage .reverseFlex2 {
@@ -95,31 +132,24 @@
     margin-top: -40px;
 }
 
-@keyframes boxShadeTeamImg {
-    0% {
-        box-shadow: #ffffff12 0px 0px 50px;
-    }
-
-    50% {
-        box-shadow: #ffffff66 0px 0px 50px;
-    }
-
-    100% {
-        box-shadow: #ffffff12 0px 0px 50px;
-    }
-}
-
 @keyframes logoShadow {
     0% {
-        filter: drop-shadow(#ffffff77 0px 0px 50px);
+        filter: drop-shadow(#ffffff77 0px 0px 20px);
+        transform: scale(0.98);
+        /* filter: blur(5px); */
+
     }
 
     50% {
         filter: drop-shadow(#e16405c5 0px 0px 50px);
+        transform: scale(1);
+
     }
 
     100% {
-        filter: drop-shadow(#ffffff77 0px 0px 50px);
+        filter: drop-shadow(#ffffff77 0px 0px 20px);
+        transform: scale(0.98);
+        /* filter:; */
 
     }
 }
@@ -137,7 +167,6 @@
     outline: 3px solid white;
     outline-offset: 5px;
     border-radius: 3px;
-    animation: boxShadeTeamImg 2s linear infinite;
 }
 
 .aboutPage .garudaImg {
@@ -151,6 +180,7 @@
     border-radius: 3px;
     animation: logoShadow 2s linear infinite;
 }
+
 .aboutPage .thrslImg {
     width: 100%;
     height: auto;

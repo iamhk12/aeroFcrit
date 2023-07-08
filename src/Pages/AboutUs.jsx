@@ -3,7 +3,7 @@ import './AboutUs.css'
 import Nav from "../components/Nav"
 import teamImg from "../components/aero_team.jpg";
 import teamGaruda from "../components/teamGaruda.png";
-import Preloader from "../components/Preloader";
+// import Preloader from "../components/Preloader";
 import aeroLogo from "../components/logo.png"
 import Footer from "../components/Footer";
 
@@ -11,15 +11,15 @@ const AboutUs = () => {
     return (
         <>
             <Nav />
-            <Preloader />
+            {/* <Preloader /> */}
             <div className="aboutPage ">
                 <div className="aboutSection ">
-                    <h1 className="animate__animated animate__fadeInUp animate__delay-2s">AERO FCRIT</h1>
-                    <div className="abContent animate__animated animate__fadeInUp animate__delay-2s">
+                    <h1 className="animate__animated animate__fadeInUp  aeroh1">AERO FCRIT</h1>
+                    <div className="abContent animate__animated animate__fadeInUp ">
                         <div className="abRight">
                             <img src={teamImg} className="teamImg" alt="team_aero" />
                         </div>
-                        <div className="abLeft">
+                        <div className="abLeft animate__animated animate__fadeInUp" >
                             <p>
                                 We specialize in designing, innovating, building, and testing
                                 fixed-wing UAVs and drones.
@@ -53,10 +53,10 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="centeringdiv" style={{background : "#041d4f"}} ><hr style={{ margin: 0, border: "2px solid #fff" , width : "50%"}} /></div>
-                <div className="aboutSection garuda animate__animated animate__fadeIn animate__delay-1s">
-                    <h1 className="animate__animated animate__fadeInUp animate__delay-2s">TEAM GARUDA</h1>
-                    <div className="abContent reverseFlex animate__animated animate__fadeInUp animate__delay-2s">
+                <div className="centeringdiv " style={{background : "#041d4f"}} ><hr style={{ margin: 0, border: "2px solid #fff" , width : "50%"}} className="animate__animated animate__fadeInUp animate__delay-1s"/></div>
+                <div className="aboutSection garuda animate__animated animate__fadeIn ">
+                    <h1 className="animate__animated animate__fadeInUp garudah1">TEAM GARUDA</h1>
+                    <div className="abContent reverseFlex animate__animated animate__fadeInUp animate__delay-1s">
                         <div className="abRight">
                             <img src={teamGaruda} className="garudaImg" alt="team_aero" />
                         </div>
