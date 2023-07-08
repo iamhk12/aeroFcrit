@@ -8,12 +8,12 @@
   justify-content: center;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
-  width: 0.2em;
+  width: 0.3em;
 }
 
 body::-webkit-scrollbar-track {
@@ -24,12 +24,12 @@ body::-webkit-scrollbar-track {
 
 /* Style the scrollbar thumb */
 body::-webkit-scrollbar-thumb {
-  background-color: #ffffff;
+  background-color: #ffffffda;
 }
 
 /* Hover state for the scrollbar thumb */
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #ffffff;
+  background-color: #72bbff;
 
 }
 

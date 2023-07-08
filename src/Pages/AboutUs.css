@@ -1,14 +1,40 @@
-.aboutPage{
+.aboutPage {
     min-height: calc(100vh - 80px);
     background: linear-gradient(#051b47, #041d4f);
     display: flex;
     flex-direction: column;
-    padding-bottom: 80px;
 }
+
 .aboutPage .aboutSection {
     color: white;
     padding: 30px;
-    margin-top: 70px;
+    padding-top: 70px;
+    /* padding-bottom: 80px; */
+}
+
+.aboutPage .aboutSection {
+    background: linear-gradient(#051b47, #041d4f);
+    padding-bottom: 30px;
+
+}
+
+.aboutPage .aboutSection.garuda {
+    background-color: #006191;
+    background: linear-gradient(#041d4f , #062668);
+    /* border-top: 2px solid white; */
+
+}
+
+.aboutPage .aboutSection.thrsl {
+    background: linear-gradient(#062668, #072d78);
+    padding-bottom: 80px;
+    /* border-top: 2px solid white; */
+
+
+}
+
+.thrslh1{
+    
 }
 
 .aboutPage .aboutSection>h1 {
@@ -22,16 +48,18 @@
     justify-content: space-between;
 
 }
-.aboutPage .reverseFlex  {
+
+.aboutPage .reverseFlex {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     /* justify-content: space-between; */
     justify-content: center;
-    padding-top: 60px;
+    padding: 60px 0px;
 
 }
-.aboutPage .reverseFlex2  {
+
+.aboutPage .reverseFlex2 {
     display: flex;
     align-items: center;
     /* flex-direction: row-reverse; */
@@ -40,9 +68,11 @@
     padding-top: 60px;
 
 }
+
 .aboutPage .abContent.reverseFlex .abLeft {
     width: 45%;
 }
+
 .aboutPage .abContent.reverseFlex2 .abLeft {
     width: 45%;
 }
@@ -62,7 +92,7 @@
     width: 40%;
     display: flex;
     align-items: flex-start;
-    margin-top: -40px ;
+    margin-top: -40px;
 }
 
 @keyframes boxShadeTeamImg {
@@ -81,22 +111,23 @@
 
 @keyframes logoShadow {
     0% {
-        filter: drop-shadow(#ffffff12 0px 0px 50px);
+        filter: drop-shadow(#ffffff77 0px 0px 50px);
     }
 
     50% {
-        filter: drop-shadow(#ffffff52 0px 0px 50px);
+        filter: drop-shadow(#e16405c5 0px 0px 50px);
     }
 
     100% {
-        filter: drop-shadow(#ffffff12 0px 0px 50px);
-        
+        filter: drop-shadow(#ffffff77 0px 0px 50px);
+
     }
 }
 
 .aboutPage .aboutSection>h1 {
-    text-shadow: #000000b4 0px 0px 50px;
+    text-shadow: #0000004f 0px 0px 50px;
 }
+
 .aboutPage .teamImg {
     width: 90%;
     height: auto;
@@ -108,6 +139,7 @@
     border-radius: 3px;
     animation: boxShadeTeamImg 2s linear infinite;
 }
+
 .aboutPage .garudaImg {
     width: 100%;
     height: auto;
@@ -119,11 +151,19 @@
     border-radius: 3px;
     animation: logoShadow 2s linear infinite;
 }
+.aboutPage .thrslImg {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    margin-left: 60px;
+    /* outline: 3px solid white; */
+    outline-offset: 5px;
+    border-radius: 3px;
+}
 
 .abLeft p {
     width: 100%;
     padding: 0px 50px;
     /* font-size: 14px; */
 }
-
-

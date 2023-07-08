@@ -12,8 +12,8 @@ const AboutUs = () => {
         <>
             <Nav />
             <Preloader />
-            <div className="aboutPage">
-                <div className="aboutSection">
+            <div className="aboutPage ">
+                <div className="aboutSection ">
                     <h1 className="animate__animated animate__fadeInUp animate__delay-2s">AERO FCRIT</h1>
                     <div className="abContent animate__animated animate__fadeInUp animate__delay-2s">
                         <div className="abRight">
@@ -53,7 +53,8 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="aboutSection">
+                <div className="centeringdiv" style={{background : "#041d4f"}} ><hr style={{ margin: 0, border: "2px solid #fff" , width : "50%"}} /></div>
+                <div className="aboutSection garuda animate__animated animate__fadeIn animate__delay-1s">
                     <h1 className="animate__animated animate__fadeInUp animate__delay-2s">TEAM GARUDA</h1>
                     <div className="abContent reverseFlex animate__animated animate__fadeInUp animate__delay-2s">
                         <div className="abRight">
@@ -79,11 +80,13 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="aboutSection">
-                    <h1 className="animate__animated animate__fadeInUp animate__delay-2s">TEAM THESTRAL</h1>
+                <div className="centeringdiv" style={{background : "#062668"}} ><hr style={{ margin: 0, border: "2px solid #fff" , width : "50%"}} /></div>
+
+                <div className="aboutSection thrsl">
+                    <h1 className="animate__animated animate__fadeInUp animate__delay-2s thrslh1">TEAM THESTRAL</h1>
                     <div className="abContent reverseFlex2 animate__animated animate__fadeInUp animate__delay-2s">
                         <div className="abRight">
-                            <img src={aeroLogo} className="garudaImg" alt="team_aero" />
+                            <img src={aeroLogo} className="thrslImg" alt="team_aero" />
                         </div>
                         <div className="abLeft">
                             <p>
@@ -99,7 +102,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }
